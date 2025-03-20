@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suraj Sheela - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #121212;
-      color: #f5f5f5;
-    }
-    .hero-section {
-      background: linear-gradient(135deg, #1a202c, #2d3748);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .section-heading {
-      color: #38bdf8; /* Blue accent */
-    }
-    .hover-effect:hover {
-      transform: scale(1.05);
-      transition: all 0.3s ease;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Sheela | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+            }
+
+        .about-me {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+            .about-me h2 {
+                font-size: 2em;
+            }
+
+            .about-me p {
+                font-size: 1.2em;
+                max-width: 800px;
+                margin: 0 auto;
+                line-height: 1.6;
+            }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+            footer a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
 </head>
 <body>
 
-  <!-- Hero Section (Home) -->
-  <section id="home" class="hero-section">
-    <div>
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white">Suraj Sheela</h1>
-      <p class="text-xl mt-4 text-gray-400">AI Developer | Cloud Engineer | Software Engineer</p>
-      <a href="#about" class="mt-8 inline-block px-6 py-2 text-lg bg-blue-600 text-white rounded-lg hover:bg-blue-700">Learn More</a>
-    </div>
-  </section>
+    <header>
+        <h1>Suraj Sheela</h1>
+        <p>Computer Science Student | AI Developer | Problem Solver</p>
+    </header>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-800">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold section-heading">About Me</h2>
-      <p class="text-lg mt-6 text-gray-300">I am a Computer Science student passionate about cloud computing, AI, and software development. I have hands-on experience with AWS, Azure, Docker, Kubernetes, and much more. Currently, I am an AI Applications Developer Intern at TaskUs.</p>
-      <p class="text-lg mt-4 text-gray-300">Check out my skills and projects below!</p>
-    </div>
-  </section>
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm Suraj Sheela, a passionate computer science student at the University of North Texas. I am deeply interested in artificial intelligence, cloud computing, and software development. I have experience with a variety of programming languages and tools, and I'm always looking for opportunities to learn and grow in the tech world.</p>
+        <p>Throughout my academic journey, I've had the chance to work on multiple real-world projects that have helped me refine my technical skills. I love collaborating with others, solving complex problems, and creating innovative solutions. My ultimate goal is to make a positive impact through technology.</p>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold section-heading">My Projects</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
-        <div class="project-card hover-effect p-6 bg-gray-700 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold text-white">Generative AI Recipe App</h3>
-          <p class="mt-4 text-gray-400">A Generative AI app built with JavaScript, AWS, and Lambda, designed for real-time recipe generation.</p>
-          <a href="https://github.com/SuraajVarne/RecipeApp" class="mt-4 inline-block text-blue-400">View Project</a>
-        </div>
-        <!-- Add more project cards as needed -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-800">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold section-heading">Contact</h2>
-      <p class="text-lg mt-6 text-gray-300">Feel free to reach out to me through any of the following platforms.</p>
-      <div class="mt-8">
-        <a href="mailto:suraajvarnesheela@gmail.com" class="text-blue-400">Email</a> |
-        <a href="https://www.linkedin.com/in/surajsheela/" class="text-blue-400"> LinkedIn</a> |
-        <a href="https://github.com/SuraajVarne" class="text-blue-400"> GitHub</a>
-      </div>
-    </div>
-  </section>
+    <footer>
+        <p>Contact me:</p>
+        <a href="mailto:suraajvarnesheela@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/suraj-sheela">LinkedIn</a>
+        <a href="https://github.com/SuraajVarne">GitHub</a>
+    </footer>
 
 </body>
 </html>
