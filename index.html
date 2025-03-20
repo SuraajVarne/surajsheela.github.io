@@ -1,82 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suraj Sheela | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-            header h1 {
-                margin: 0;
-            }
-
-        .about-me {
-            padding: 40px 20px;
-            text-align: center;
-            background-color: #fff;
-        }
-
-            .about-me h2 {
-                font-size: 2em;
-            }
-
-            .about-me p {
-                font-size: 1.2em;
-                max-width: 800px;
-                margin: 0 auto;
-                line-height: 1.6;
-            }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-            footer a {
-                color: #fff;
-                text-decoration: none;
-                margin: 0 10px;
-            }
-
-                footer a:hover {
-                    text-decoration: underline;
-                }
-    </style>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Header with Navigation -->
     <header>
-        <h1>Suraj Sheela</h1>
-        <p>Computer Science Student | AI Developer | Problem Solver</p>
+        <nav>
+            <div class="logo">
+                <h1>Suraj Sheela</h1>
+            </div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>Hello! I'm Suraj Sheela, a passionate computer science student at the University of North Texas. I am deeply interested in artificial intelligence, cloud computing, and software development. I have experience with a variety of programming languages and tools, and I'm always looking for opportunities to learn and grow in the tech world.</p>
-        <p>Throughout my academic journey, I've had the chance to work on multiple real-world projects that have helped me refine my technical skills. I love collaborating with others, solving complex problems, and creating innovative solutions. My ultimate goal is to make a positive impact through technology.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am Suraj Sheela – a passionate Computer Science student, AI Developer, and Problem Solver.</p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </div>
     </section>
 
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <!-- Profile Picture -->
+            <img src="profile.jpg" alt="Suraj Sheela" class="profile-pic" />
+
+            <!-- Detailed Bio -->
+            <div class="bio">
+                <p>Hello! I'm Suraj Sheela, a dedicated computer science student at the University of North Texas (Aug 2021 - May 2025) with a passion for artificial intelligence, cloud computing, and innovative software development. I thrive on tackling complex challenges and transforming ideas into reality.</p>
+                <p>My journey in tech has been marked by academic excellence—I currently hold a GPA of 3.66/4.00, have consistently made the Dean's List, and was honored with the Eagle Excellence Scholarship. I also proudly served as the Undergraduate Teaching Assistant of the Year in 2024, mentoring and inspiring future tech professionals.</p>
+            </div>
+
+            <!-- Education & Awards -->
+            <div class="details">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>B.Sc. (Hons) in Computer Science</strong> – University of North Texas, Denton, TX (Aug 2021 - May 2025)</li>
+                    <li>GPA: 3.66/4.00</li>
+                    <li>Dean's List (2021-2024)</li>
+                    <li>Eagle Excellence Scholarship ($4000/yr)</li>
+                </ul>
+
+                <h3>Awards & Honors</h3>
+                <ul>
+                    <li>Dean's List (2021-2024)</li>
+                    <li>Undergraduate Teaching Assistant of the Year (CS) 2024</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact me:</p>
-        <a href="mailto:suraajvarnesheela@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/suraj-sheela">LinkedIn</a>
+        <p>Connect with me:</p>
+        <a href="mailto:suraajvarnesheela@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/suraj-sheela">LinkedIn</a> |
         <a href="https://github.com/SuraajVarne">GitHub</a>
     </footer>
 
