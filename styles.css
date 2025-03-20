@@ -24,17 +24,6 @@ header {
     left: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    animation: slideDown 1s ease forwards;
-}
-
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
 
 nav {
@@ -62,16 +51,16 @@ nav {
                     color: #ffdd57;
                 }
 
-/* Hero Section */
+/* Hero Section with background image */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?tech') no-repeat center center/cover;
+    background: url('675.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    padding-top: 80px; /* Offset for fixed header */
+    padding-top: 80px;
 }
 
     .hero::after {
@@ -90,19 +79,6 @@ nav {
     z-index: 1;
     max-width: 800px;
     padding: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 .hero h1 {
@@ -141,62 +117,63 @@ nav {
         color: #1d2b64;
     }
 
-    .about .content {
-        max-width: 900px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #1d2b64;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bio {
+    max-width: 700px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.details {
+    margin-top: 50px;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+    .details h3 {
+        color: #1d2b64;
+        margin-bottom: 10px;
     }
 
-    .about .profile-pic {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid #1d2b64;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    .details ul {
+        list-style: none;
+        padding-left: 0;
     }
 
-    .about .bio {
-        font-size: 1.2em;
-        color: #555;
-        text-align: left;
-        line-height: 1.6;
-        max-width: 800px;
-        margin-top: 20px;
-    }
-
-    .about .details {
-        margin-top: 30px;
-        text-align: left;
-        width: 100%;
-        max-width: 800px;
-    }
-
-        .about .details h3 {
-            color: #1d2b64;
-            margin-bottom: 10px;
+        .details ul li {
+            background: #f4f4f9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
         }
 
-        .about .details ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-            .about .details ul li {
-                background: #f0f0f0;
-                margin: 8px 0;
-                padding: 10px;
-                border-radius: 5px;
+            .details ul li strong {
+                color: #1d2b64;
             }
 
 /* Footer */
 footer {
     background: #1d2b64;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
