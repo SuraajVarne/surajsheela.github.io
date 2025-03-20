@@ -1,92 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suraj Sheela | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Sheela | AI Developer | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Header with Navigation -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Suraj Sheela</h1>
-            </div>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section with background image -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-text">
             <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Suraj Sheela, an AI Developer, Cloud Engineer, and Software Developer.</p>
+            <p>I am Suraj Sheela – a passionate Computer Science student, AI Developer, and Problem Solver.</p>
             <a href="#about" class="btn">Learn More About Me</a>
         </div>
-    </section>
+    </header>
 
     <!-- About Me Section -->
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="content">
-            <div class="profile-container">
-                <img src="profile.jpg" alt="Suraj Sheela" class="profile-pic" />
-                <div class="bio">
-                    <p>Hello, I am Suraj Sheela, a passionate Computer Science student currently studying at the University of North Texas. My primary focus is in the fields of artificial intelligence, cloud computing, and software development. I am always excited to learn and create innovative technologies that make a difference.</p>
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Suraj Sheela" class="profile-pic">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hello! I'm Suraj Sheela, a dedicated computer science student at the University of North Texas (Aug 2021 - May 2025) with a passion for artificial intelligence, cloud computing, and innovative software development. I thrive on tackling complex challenges and transforming ideas into reality.</p>
+                <p>My journey in tech has been marked by academic excellence—I currently hold a GPA of 3.66/4.00, have consistently made the Dean's List, and was honored with the Eagle Excellence Scholarship. I also proudly served as the Undergraduate Teaching Assistant of the Year in 2024, mentoring and inspiring future tech professionals.</p>
 
-                    <p>I am currently an AI Applications Developer Intern at TaskUs, where I work with advanced AI models to build real-world solutions. I specialize in cloud platforms like AWS and Azure, and I’m proficient in technologies like Docker and Kubernetes for containerized deployments. I am passionate about creating software that solves problems and enhances people's lives.</p>
-
-                    <p>Beyond work and academics, I have a deep interest in emerging technologies and am constantly working to expand my skills through side projects and personal research.</p>
-
-                    <p>My ultimate goal is to contribute to AI and cloud computing solutions that will shape the future of technology. Below are a few highlights from my journey so far:</p>
-                </div>
-            </div>
-
-            <!-- Education & Skills -->
-            <div class="details">
                 <h3>Education</h3>
-                <ul>
-                    <li><strong>B.Sc. (Hons) in Computer Science</strong> – University of North Texas, Denton, TX (Aug 2021 - May 2025)</li>
-                    <li>GPA: 3.66/4.00</li>
-                    <li>Dean's List (2021-2024)</li>
-                    <li>Eagle Excellence Scholarship ($4000/yr)</li>
-                </ul>
-
-                <h3>Skills & Technologies</h3>
-                <ul>
-                    <li><strong>Languages:</strong> Python, JavaScript, Java, C++, SQL</li>
-                    <li><strong>Cloud Computing:</strong> AWS, Microsoft Azure, Google Cloud Platform</li>
-                    <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Node.js, React</li>
-                    <li><strong>AI & Machine Learning:</strong> TensorFlow, Keras, OpenCV, Pandas, Scikit-Learn</li>
-                    <li><strong>Containerization:</strong> Docker, Kubernetes</li>
-                    <li><strong>DevOps Tools:</strong> Jenkins, Terraform, Ansible</li>
-                </ul>
-
-                <h3>Awards & Honors</h3>
-                <ul>
-                    <li>Dean's List (2021-2024)</li>
-                    <li>Undergraduate Teaching Assistant of the Year (CS) 2024</li>
-                    <li>Eagle Excellence Scholarship Recipient ($4000/year)</li>
-                </ul>
+                <p><strong>B.Sc. (Hons) in Computer Science – University of North Texas, Denton, TX</strong> (Aug 2021 - May 2025)</p>
+                <p><strong>GPA:</strong> 3.66/4.00</p>
+                <p><strong>Awards:</strong> Dean's List (2021-2024), Eagle Excellence Scholarship, Undergraduate Teaching Assistant of the Year (2024)</p>
             </div>
         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Generative AI Recipe App</h3>
+            <p>A Generative AI app built with JavaScript, AWS, and Lambda, designed for real-time recipe generation.</p>
+            <a href="https://github.com/SuraajVarne/Generative-AI-Recipe-App" class="btn">View Project</a>
+        </div>
+        <!-- Add more project entries here as you see fit -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me through any of the following platforms:</p>
+        <ul>
+            <li><a href="mailto:suraajvarnesheela@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/suraj-sheela/">LinkedIn</a></li>
+            <li><a href="https://github.com/SuraajVarne">GitHub</a></li>
+        </ul>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Connect with me:</p>
-        <a href="mailto:suraajvarnesheela@gmail.com">Email</a> |
-        <a href="https://www.linkedin.com/in/suraj-sheela">LinkedIn</a> |
-        <a href="https://github.com/SuraajVarne">GitHub</a>
+        <p>&copy; 2025 Suraj Sheela. All rights reserved.</p>
     </footer>
-
 </body>
+
 </html>
